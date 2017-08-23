@@ -73,7 +73,8 @@ div#car{
 }
 
 .rotaract p{
-	text-align: justify;
+	text-align: left;
+	line-height: 25px;
 	padding: 10px 50px;
 	font-family: sans-serif;
 	font-size: 18px;
@@ -100,7 +101,8 @@ div#car{
 }
 
 .nosotros p{
-	text-align: justify;
+	text-align: left;
+	line-height: 25px;
 	padding: 10px 50px;
 	font-family: sans-serif;
 	font-size: 18px;
@@ -112,11 +114,12 @@ div#car{
 
 .nosotros li{
 	text-align: left;
-	padding: 10px 50px;
+	padding: 10px 20px;
 	font-family: sans-serif;
 	font-size: 18px;
 	list-style-type: none;
 }
+
 
 b {
 	font-family: sans-serif;
@@ -147,7 +150,8 @@ b {
 }
 
 .actividades p{
-	text-align: justify;
+	text-align: left;
+	line-height: 25px;
 	padding: 5px 50px;
 	font-family: sans-serif;
 	font-size: 18px;
