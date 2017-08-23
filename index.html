@@ -1,12 +1,109 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 	<head>
 		<title>Rotaract Belgrano</title>
 		<meta charset="utf-8">
 		<meta main="description" content="Rotaract Belgrano es un club de ayuda a la comunidad, relaciones internacionales y liderazgo.">
 		<meta name="keywords" content="rotaract belgrano, rotary argentina, ayuda a la comunidad"> 
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	</head>
 	<body>
-		
+		<div class="contenedor">
+			<header>
+				<a name="arriba">
+				<img src="img/rtclogo.png" alt="Logo de Rotaract Belgrano">
+			</header>
+			<nav>
+				<ul>
+					<li><a href="#rotaract">Rotaract</a></li>
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#actividades">Actividades</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+			<div id="car">
+				<img class="mySlides" src="img/foto1.jpg" alt="Foto grupal 1">
+				<img class="mySlides" src="img/foto2.jpg" alt="Foto grupal 2">
+				<img class="mySlides" src="img/foto3.jpg" alt="Foto grupal 3">
+			</div>
+			<main>
+				<div class="rotaract">
+					<a name="rotaract">
+					<h1>Rotaract</h1>
+					<p><a href="https://www.rotary.org/es/get-involved/rotaract-clubs">Rotaract</a>, cuyo nombre proviene de "ROTARe in ACTion" ("Rotary en Acción") es un socio de Rotary International, compuesto por jóvenes de ambos sexos cuyas edades oscilan entre los 18 y los 30 años inclusive.</p>
+
+					<p>La institución tiene como propósito ofrecer una oportunidad a hombres y mujeres jóvenes para aumentar los conocimientos y condiciones que les ayuden en su desarrollo personal, y los impulsen a buscar una solución para las necesidades físicas y sociales de sus comunidades, promoviendo mejores relaciones entre los pueblos de todo el mundo en un marco de amistad y servicio.</p>
+
+					<p id="pborde">Los rotaractianos tienen acceso a los numerosos medios que ofrecen Rotary Internacional y la Fundación Rotaria.</p>
+
+					<a class="arriba" href="#arriba">Volver arriba</a>
+				</div>
+
+				<div class="nosotros">
+					<a name="nosotros">
+					<h2>Rotaract Belgrano</h2>
+					<p>Nuestro club ya tiene más de 20 años, somos uno de los primeros clubes Rotaract en el Capital Federal.</p>
+					<p>Actualmente somos el club más grande del Distrito 4895 y contamos con más de 30 socios. Nuestro club cuenta con miembros provenientes de diferentes profesiones y nacionalidades. Contamos con gente del interior del país así como también de otros lugares de Latino América.</p>
+					<p>Nuestra junta directiva 2017-2018 esta compuesta por:</p>
+					<ul>
+						<li><b>Prsidente:</b> Omar Bey</li>
+						<li><b>Vice-presidente:</b> Juan Pablo Cammarota</li>
+						<li><b>Tesorero:</b> Agustín Catalano</li>
+						<li><b>Pro-Tesorera:</b> Paulina Guerra</li>
+						<li><b>Secretaria:</b> Nayla Videla</li>
+						<li><b>Pro-secretaria:</b> Camila Pazos</li>
+						<li><b>Past-president:</b> Priscila Bey</li>
+					</ul>
+					<a class="arriba" href="#arriba">Volver arriba</a>
+				</div>
+
+				<div class="actividades">
+					<a name="actividades">
+					<h2>Las Actividades del Club</h2>
+					<h3>Ayudamos a la comunidad</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit provident inventore, recusandae ipsum laboriosam dolorem sunt voluptas labore aspernatur, perspiciatis delectus distinctio cumque quam, debitis eos quia ipsa ea, ducimus!</p>
+					<h3>Nos conectamos con todo el mundo</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis earum fugiat rem aliquam, rerum nesciunt non dolorem eligendi deserunt dicta ab debitis ullam error explicabo, consectetur et temporibus voluptatibus culpa.</p>
+					<h3>Creamos nuevos vínculos</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste at dignissimos asperiores est iusto mollitia praesentium modi quisquam, debitis quidem vel ducimus aliquid possimus tempora ab molestiae, labore. Sapiente, autem.</p>
+					<h3>Nos capacitamos</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nesciunt accusamus nemo eaque perferendis reprehenderit deserunt odio provident ipsum soluta ipsa sapiente, assumenda error quos accusantium, et ab aspernatur at!</p>
+					<a class="arriba" href="#arriba">Volver arriba</a>
+				</div>
+				<form>
+					<h2>Dejanos un msj</h2>
+					<div>
+						<input type="text" name="nombre" placeholder="nombre">
+					</div>
+					<div>
+						<input type="mail" name="mail" placeholder="ejemplo@mail.com">
+					</div>
+					<div>
+						<textarea placeholder="Escribe tu msj..."></textarea>
+					</div>
+					<button type="submit">Enviar</button>
+				</form>
+			</main>
+			<footer>
+				<p>All rights reserved to Puri Puri</p>
+			</footer>	
+		</div>
+			<script>
+				var slideIndex = 0;
+				carousel();
+
+				function carousel() {
+				    var i;
+				    var x = document.getElementsByClassName("mySlides");
+				    for (i = 0; i < x.length; i++) {
+				      x[i].style.display = "none"; 
+				    }
+				    slideIndex++;
+				    if (slideIndex > x.length) {slideIndex = 1} 
+				    x[slideIndex-1].style.display = "block"; 
+				    setTimeout(carousel, 2000); // Change image every 2 seconds
+				}
+			</script>
 	</body>
 </html>
